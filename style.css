@@ -6,6 +6,7 @@ body{
     background-color:#f4f4f4;
     font-family: 'Source Sans Pro', 'sans-serif';
     margin: 0;
+    overflow-x: hidden;
 }
 
 .row.left{
@@ -40,6 +41,13 @@ body{
     height: 100vh;
     right: 0;
     margin: 5px 10px;
+}
+
+.container{
+    position: absolute;
+/* z-index: -1; */
+    top: 0;
+    left: 15vw;
 }
 
 /* ROW LEFT CSS */
