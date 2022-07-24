@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Condensed:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+
+body{
+    position: relative;
+    background-color:#f4f4f4;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    margin: 0;
+}
+
+.row.left{
+    position: fixed;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+}
+
+.row.center{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 61vw;
+    height: 100vh;
+    top: 0;
+    left: 15vw;
+    margin: 40px;
+}
+
+.row.right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    right: 0;
+    margin: 5px 10px;
+}
+
+/* ROW LEFT CSS */
+
+.topnav{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.row.left img{
+    width: 120px;
+    margin-left: 20px;
+}
+
+.row.left ul{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    
+}
+
+.row.left ul li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.row.left ul li a{
+    color: #f4f4f4;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.row.left ul li:hover{
+    background-color: #494949;
+    border-left: 2px solid #f4f4f4;
+}
+
+.row.left ul li a i{
+    padding-right: 10px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.btn-pdf{
+    margin: 0 15px 30px;
+}
+
+.btn-pdf:hover{
+    background-color: #FB9935;
+    color: #000;
+}
+
+/* ROW CENTER CSS */
+
+.col.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.col.top h1{
+    font-weight: bold;
+}
+
+.col.top ul{
+    display: flex;
+    margin: 10px 0;
+}
+
+.col.top ul li{
+    font-size: 11px;
+    background-color: #323232;
+    font-weight: bold;
+    color: #f4f4f4;
+    margin-right: 10px;
+    padding: 2px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+.col.top ul li:hover{
+    background-color: #fff;
+    color: #FB9935;
+}
+
+.col.top ul li.active{
+    background-color: #fff;
+    color: #FB9935;
+}
+
+.col.middle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.col.middle .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #323232;
+    /* background-color: #fff; */
+    height: 150px;
+    width: 18vw;
+    margin-top: 20px;
+    margin-right: 12px;
+    border-radius: 25px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+.col.middle .card span{
+    display: flex;
+    flex-direction: column;
+}
+
+.card span h3{
+    font-weight: 400;
+}
+
+.card:hover{
+    background-color: #fff;
+}
+
+.standby{
+    background-color: rgba(13, 255, 0, 0.201);
+}
+
+.onCall{
+    background-color: rgba(3, 63, 200, 0.201);
+}
+
+.away{
+    background-color: rgba(255, 191, 0, 0.201);
+}
+
+.col.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.col.bottom h3{
+    margin-bottom: 20px;
+}
+
+table{
+    background-color: #fff;
+    width: 56vw;
+    padding: 15px;
+    margin: 10px 0 50px;
+    border-radius: 25px;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+th{
+    color: #323232;
+}
+
+tr{
+    color: #3e3e3e;
+    font-size: 17px;
+    margin: 0;
+}
+
+table thead tr{
+    text-align: left;
+}
+
+th,
+td{
+    padding: 12px 15px;
+    margin: 0;
+}
+
+/* tbody tr:hover{
+    background-color: #f4f4f4;
+} */
+
+td a{
+    color: #494949a5;
+    text-decoration: underline;
+}
+
+td a:hover{
+    color: #494949;
+    text-decoration: underline;
+}
+
+
+/* ROW RIGHT CSS */
+.row.right .col.top{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.row.right .col.top h3{
+    margin-top: 10px;
+}
+
+.row.right .col.top .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.row.right .col.top .avatar img, .recent-activity img{
+    background-color: #fff;
+    width: 23px;
+    height: fit-content;
+    padding: 1px 3px;
+    border-radius: 25px;
+    margin: 0 7px;
+    border: 1px solid #494949;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+.row.right .col.top .avatar span{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.row.right .col.top .avatar:hover{
+    color: #FB9935;
+}
+
+.row.right .col.middle{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 94%;
+    height: fit-content;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+
+
+.row.right .col.middle .recent-activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 15px 20px; */
+    margin: 15px 20px 0 20px;
+}
+
+.item-activity img{
+    background-color: #eee;
+    margin-left: 0;
+}
+
+.recent-activity .item-activity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-activity p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.item-activity span small{
+    font-size: 11px;
+    color: #494949;
+}
+
+.row.right .col.middle .see-more{
+    color: #323232;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.row.right .col.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+
+.row.right .col.bottom .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    padding: 10px 30px;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+.row.right .col.bottom .item:hover{
+    background-color: #494949;
+    color: #f4f4f4;
+}
+
+.row.right .col.bottom .item span{
+    display: flex;
+    flex-direction: column;
+}
+
+.item .amount{
+    font-size: 20px;
+}
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    /> 
+    <link rel="stylesheet" href="style.css">
+    <title>System Dashboard</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="default-register">
+            <span>
+                <img src="img/default-img-dark.png" alt="">
+                <h3>Register for an Admin Account</h3>
+            </span>
+            <form action="login.html">
+                <div class="field-area">
+                    <label for="username">Username*</label>
+                    <input type="text">
+                </div>
+                <div class="field-area">
+                    <label for="email">Email Address*</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="field-area">
+                    <label for="password">Password*</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="field-area">
+                    <label for="password">Confirm Password*</label>
+                    <input type="password_confirmation" name="password_confirmation">
+                </div>
+                <input type="submit" value="Register">
+                <small>Already have an account? <a href="login.html"><small>Login</small> </a></small>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
