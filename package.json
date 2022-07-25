@@ -1,0 +1,19 @@
+{
+  "name": "91watch-dashboard-template-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enrica101/91watch-system-dashboard.git"
+  },
+  "keywords": [],
+  "author": "Enrica Jules Carpena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enrica101/91watch-system-dashboard/issues"
+  },
+  "homepage": "https://github.com/enrica101/91watch-system-dashboard#readme"
+}
