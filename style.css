@@ -116,24 +116,17 @@ form input[type=submit]:hover{
     height: 100vh;
     top: 0;
     left: 15vw;
-    margin: 40px;
+    margin: 20px;
 }
 
 .row.right{
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 24vw;
     height: 100vh;
     right: 0;
-    margin: 5px 10px;
-}
-
-.container{
-    position: absolute;
-/* z-index: -1; */
-    top: 0;
-    left: 15vw;
+    margin: 5px;
 }
 
 /* ROW LEFT CSS */
@@ -264,10 +257,11 @@ h1, h2, h3, h4, h5, h6{
 
 .col.middle .card{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: #323232;
-    /* background-color: #fff; */
+    background-color: #fff;
     height: 150px;
     width: 18vw;
     margin-top: 20px;
@@ -277,13 +271,22 @@ h1, h2, h3, h4, h5, h6{
     box-shadow: 1px 0 5px rgba(0,0,0,0.1);
 }
 
-.col.middle .card span{
-    display: flex;
-    flex-direction: column;
+.col.middle .card span.headers{
+    padding-bottom: 8px;
+    border-bottom: 0.8px solid rgba(0,0,0,0.1);
 }
 
-.card span h3{
+.col.middle .card span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 3px 0;
+}
+
+.card span h4{
     font-weight: 400;
+    font-size: 15px;
 }
 
 .card:hover{
@@ -302,11 +305,20 @@ h1, h2, h3, h4, h5, h6{
     background-color: rgba(255, 191, 0, 0.201);
 }
 
-.col.bottom{
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
+.row.center .col.bottom{
+    width: 55vw;
+    height: fit-content;
 }
+
+canvas{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+    margin: 10px 5px;
+}
+
+/* 
 
 .col.bottom h3{
     margin-bottom: 20px;
@@ -316,7 +328,7 @@ table{
     background-color: #fff;
     width: 56vw;
     padding: 15px;
-    margin: 10px 0 50px;
+    margin: 10px 0 20px;
     border-radius: 25px;
     box-shadow: 1px 0 5px rgba(0,0,0,0.1);
 }
@@ -339,12 +351,12 @@ th,
 td{
     padding: 12px 15px;
     margin: 0;
-}
+} */
 
 /* tbody tr:hover{
     background-color: #f4f4f4;
 } */
-
+/* 
 td a{
     color: #494949a5;
     text-decoration: underline;
@@ -353,38 +365,67 @@ td a{
 td a:hover{
     color: #494949;
     text-decoration: underline;
-}
+} */
 
 
 /* ROW RIGHT CSS */
 .row.right .col.top{
     display: flex;
-    flex-direction: column;
-    align-items: right;
-    text-align: left;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    margin: 20px 0;
+    height: 3rem;
 }
 
-.row.right .col.top h3{
-    margin-top: 10px;
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.icon i{
+    background-color: #fff;
+    color: #555555;
+    font-size: 15px;
+    padding: 5px 6.5px;
+    border-radius: 50%;
+    border: 1px solid #49494976;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+}
+
+.icon i:hover{
+    color: #555555cc;
+}
+
+.dot{
+    position: absolute;
+    background-color: #FB9935;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.row.right h3{
+    margin: 10px 0;
 }
 
 .row.right .col.top .avatar{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     cursor: pointer;
+    width: fit-content;
 }
 
-.row.right .col.top .avatar img, .recent-activity img{
+.row.right .col.top .avatar img, 
+.recent-activity img{
     background-color: #fff;
     width: 23px;
     height: fit-content;
     padding: 1px 3px;
     border-radius: 25px;
     margin: 0 7px;
-    border: 1px solid #494949;
+    border: 1px solid #49494976;
     box-shadow: 1px 0 5px rgba(0,0,0,0.1);
 }
 
@@ -398,20 +439,26 @@ td a:hover{
     color: #FB9935;
 }
 
-.row.right .col.middle{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    width: 94%;
-    height: fit-content;
-    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
-    padding-bottom: 10px;
+.notif{
+    display: none;
 }
 
+.notif.active{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    width: 94%;
+    max-height: 80vh;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    top: 3rem;
+    overflow: auto;
+}
 
-
-.row.right .col.middle .recent-activity{
+.notif .recent-activity{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -441,20 +488,20 @@ td a:hover{
     color: #494949;
 }
 
-.row.right .col.middle .see-more{
+.notif .see-more{
     color: #323232;
     font-size: 11px;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.row.right .col.bottom{
+.row.right .emergency{
     display: flex;
     flex-direction: column;
     width: 92%;
 }
 
-.row.right .col.bottom .item{
+.row.right .emergency .item{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -465,12 +512,12 @@ td a:hover{
     box-shadow: 1px 0 5px rgba(0,0,0,0.1);
 }
 
-.row.right .col.bottom .item:hover{
+.row.right .emergency .item:hover{
     background-color: #494949;
     color: #f4f4f4;
 }
 
-.row.right .col.bottom .item span{
+.row.right .emergency .item span{
     display: flex;
     flex-direction: column;
 }
@@ -478,6 +525,17 @@ td a:hover{
 .item .amount{
     font-size: 20px;
 }
+
+/* DOUGHNUT CHART CSS */
+.row.right .col.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 23vw;
+    height: max-content;
+    margin: 5px 0;
+}
+
 
 
 
